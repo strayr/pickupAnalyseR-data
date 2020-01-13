@@ -1,0 +1,44 @@
+TODO
+
+Bass/Ibanez:
+DX5/
+
+Bass/Washburn:
+
+Bass/Westfield:
+
+
+Guitar/DiMarzio:
+AirNorton/   
+Blaze/  
+EVO/  
+IBZ/  http://guitarnuts2.proboards.com/thread/8398/dimarzio-ibz-rg-set
+Super2/  
+ToneZone/  
+TrueVelvet/
+
+Guitar/EMG:
+HZ/
+
+Guitar/Gibson:
+490R/  http://guitarnuts2.proboards.com/thread/8600/gibson-498t-490r-analysis
+498T/  http://guitarnuts2.proboards.com/thread/8600/gibson-498t-490r-analysis
+
+Guitar/Ibanez:
+370/ Need to run plots of B&N
+GIO-7/  
+INF/
+RoadCore/
+RocketRoll/
+V7/
+
+Guitar/Maverick:
+X1-bridge/ X1-neck/
+
+Guitar/SD:
+'DD Set'/   
+Dime/   http://guitarnuts2.proboards.com/thread/8604/seymour-duncan-dimebucker
+Jazz/
+
+Guitar/Squier:
+AffinityStrat/ 
