@@ -1,0 +1,2 @@
+DC Resistance: 8.57k
+Measured Inductance: 5.15h
