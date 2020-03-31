@@ -1,0 +1,2 @@
+DC Resitsance: 10.6kOhm
+Measured Inductance: 6.7H
