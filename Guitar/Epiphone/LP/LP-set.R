@@ -79,7 +79,7 @@ pickupList = c(
     manuf = "Gibson",
     mDCR = 14.28,
     tableBase = 'PublicData/Guitar/Gibson/490R/490R_HBBR'
-  )#,
+  ),
 # SysCompPickup(
 #   name = "Air Norton",
 #   manuf = "Dimarzio",
@@ -88,12 +88,12 @@ pickupList = c(
 #   ),
 
 
-# SysCompPickup(
-#   name = "2112",
-#   manuf = "Straylight",
-#   mDCR = 19.8,
-#   tableBase = 'GuitarAnalysisData/CGM/Straylight/Humbucker/P21/1212/21'
-#   )
+SysCompPickup(
+  name = "P90",
+  manuf = "Generic",
+  mDCR = 10.6,
+  tableBase = 'PublicData/Guitar/Generic/P90/P90'
+  )
 )
 
 for (p in pickupList) {
