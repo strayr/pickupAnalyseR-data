@@ -76,7 +76,7 @@ print (q$getRawPlot())
 for (p in pickupList) {
   p$printData()
   #print (p$getRawPlot())
-  print (p$getIntPlot(min=-70, max=-50))
+  print (p$getIntPlot(min=-75, max=-50))
   #print (p$getRelPlot())
 }
 
@@ -91,8 +91,8 @@ print(loadedAbsPlot(
 print(loadedRelPlot(
   pickupList,
   chartHeading = chartHeading,
-  min = -4,
-  smoothing=0.08,
+  min = -30,
+  smoothing=0.04,
   max = 4
 ))
 

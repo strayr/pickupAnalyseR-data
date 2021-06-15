@@ -1,0 +1,4 @@
+JB notes
+Ground not decoupled and it appears to have done strange things to the JB
+
+Redo HB103 screw/slug, they're ugly
