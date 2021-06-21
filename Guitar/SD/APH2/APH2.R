@@ -25,7 +25,7 @@ pickupList = c(
   SysCompPickup(
     name = "APH2 Neck",
     manuf = "Seymour Duncan",
-    mDCR = 7.19,
+    mDCR = 8.2,
     tableBase = 'PublicData/Guitar/SD/APH2/APH2N',
     LDOffset=0,
     ULOffset=0
@@ -33,7 +33,7 @@ pickupList = c(
   SysCompPickup(
     name = "APH2 Bridge",
     manuf = "Seymour Duncan",
-    mDCR = 7.19,
+    mDCR = 8.8,
     tableBase = 'PublicData/Guitar/SD/APH2/APH2B',
     LDOffset=0,
     ULOffset=0
