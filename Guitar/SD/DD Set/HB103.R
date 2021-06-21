@@ -31,14 +31,14 @@ pickupList = c(
     ULOffset=0
   ),
   SysCompPickup(
-    name = "JB Screws",
+    name = "HB103 Screws",
     manuf = "Seymour Duncan",
     mDCR = 3.60,
     tableBase = 'PublicData/Guitar/SD/DD Set/HB103B/HB103B-screw',
     ULOffset=0
   ),
   SysCompPickup(
-    name = "JB Slugs",
+    name = "HB103 Slugs",
     manuf = "Seymour Duncan",
     mDCR = 3.59,
     tableBase = 'PublicData/Guitar/SD/DD Set/HB103B/HB103B-Slug',
