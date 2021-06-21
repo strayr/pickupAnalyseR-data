@@ -24,7 +24,7 @@ pickupList = c(
     name = "HB103",
     manuf = "Seymour Duncan",
     mDCR = 7.19,
-    tableBase = 'PrivateData/CGM/SD/DD Set/HB103B/HB103B',
+    tableBase = 'PublicData/Guitar/SD/DD Set/HB103B/HB103B',
     LDOffset=0,
     ULOffset=0
   ),
@@ -32,7 +32,7 @@ pickupList = c(
   #   name = "HZ Bridge",
   #   manuf = "EMG",
   #   mDCR = 12.36,
-  #   tableBase = 'PrivateData/CGM/EMG/HZ/bridge',
+  #   tableBase = 'PublicData/Guitar/EMG/HZ/bridge',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -40,7 +40,7 @@ pickupList = c(
   #   name = "HZ Neck",
   #   manuf = "EMG",
   #   mDCR = 12.36,
-  #   tableBase = 'PrivateData/CGM/EMG/HZ/neck',
+  #   tableBase = 'PublicData/Guitar/EMG/HZ/neck',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -48,25 +48,25 @@ pickupList = c(
   #   name = "Norton",
   #   manuf = "Dimarzio",
   #   mDCR = 14.16,
-  #   tableBase = 'PrivateData/CGM/Dimarzio/AirNorton/AirNorton'
+  #   tableBase = 'PublicData/Guitar/Dimarzio/AirNorton/AirNorton'
   # ),
   SysCompPickup(
     name = "Tone Zone",
     manuf = "Dimarzio",
     mDCR = 14.16,
-    tableBase = 'PrivateData/CGM/Dimarzio/ToneZone/TZ'
+    tableBase = 'PublicData/Guitar/Dimarzio/ToneZone/TZ'
   ),
   SysCompPickup(
     name = "EVO",
     manuf = "DiMarzio",
     mDCR = 14.16,
-    tableBase = 'PrivateData/CGM/Dimarzio/EVO/OLD/EVO'
+    tableBase = 'PublicData/Guitar/DiMarzio/EVO/evoB/EVO'
   ),
   # SysCompPickup(
   #   name = "Jazz",
   #   manuf = "Seymour Duncan",
   #   mDCR = 7.19,
-  #   tableBase = 'PrivateData/CGM/SD/Jazz/Jazz',
+  #   tableBase = 'PublicData/Guitar/SD/Jazz/Jazz',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -74,7 +74,7 @@ pickupList = c(
     name = "498T",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'PrivateData/CGM/Gibson/498T/498THBBR',
+    tableBase = 'PublicData/Guitar/Gibson/498T/498THBBR',
     LDOffset=0,
     ULOffset=0
   )#,
