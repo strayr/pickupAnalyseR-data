@@ -19,7 +19,7 @@ source('pickupComparisonCharts.R')
 
 #I'm using my own pickup as the default for this template.
 
-chartHeading = "Duncan designed HB103B"
+chartHeading = "Seymour Duncan APH2"
 
 pickupList = c(
   SysCompPickup(
