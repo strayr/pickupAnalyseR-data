@@ -2,3 +2,5 @@
 Private/
 pickupAnalyser-dev/
 .Rproj.user
+.RData
+.Rhistory
