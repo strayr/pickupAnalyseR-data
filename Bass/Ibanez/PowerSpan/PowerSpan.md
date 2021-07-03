@@ -1,4 +1,4 @@
-#PowerSpan
+# PowerSpan
 Fron an Ibanez SR305
 
 # Neck
@@ -19,3 +19,12 @@ Red   /       \
       \        7.70
         3.81 /
 White /
+
+
+# Bridge
+
+White
+        3.74
+Red         7.48
+        3.74
+Black
