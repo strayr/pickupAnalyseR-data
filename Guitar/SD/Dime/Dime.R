@@ -1,15 +1,15 @@
 ###
-# Each pickup needs one of these to define a report. This should be as short as possible and 
+# Each pickup needs one of these to define a report. This should be as short as possible and
 # contain no logic beyond defining a piuckup and printing some data
 #
- 
+
 
 ##
 # Import needed libraries
 
-libfolder<-"pickupAnalyseR"
-source(paste(libfolder, 'sysCompPickup.R', sep="/"))
-source(paste(libfolder, 'pickupComparisonCharts.R', sep = "/"))
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -26,7 +26,7 @@ pickupList = c(
     name = "Dime",
     manuf = "Seymour Duncan",
     mDCR = 17.17,
-    tableBase = 'GuitarAnalysisData/CGM/SD/Dime/Dime',
+    tableBase = 'Guitar/SD/Dime/Dime',
     LDOffset=0,
     ULOffset=0
   ),
@@ -34,14 +34,14 @@ pickupList = c(
     name = "Dime GR",
     manuf = "Seymour Duncan",
     mDCR = 8.47,
-    tableBase = 'GuitarAnalysisData/CGM/SD/Dime/DimeGR',
+    tableBase = 'Guitar/SD/Dime/DimeGR',
     ULOffset=0
   ),
   SysCompPickup(
     name = "Dime WB",
     manuf = "Seymour Duncan",
     mDCR = 8.71,
-    tableBase = 'GuitarAnalysisData/CGM/SD/Dime/DimeWB',
+    tableBase = 'Guitar/SD/Dime/DimeWB',
     ULOffset=0
   )
 )

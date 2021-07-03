@@ -1,6 +1,7 @@
-libfolder <- "pickupAnalyseR"
-source(paste(libfolder, 'sysCompPickup.R', sep = "/"))
-source(paste(libfolder, 'pickupComparisonCharts.R', sep = "/"))
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -16,13 +17,13 @@ pickupList = c(
     name = "Ibanez V2",
     manuf = "Maxxon",
     mDCR = 15.49,
-    tableBase = 'GuitarAnalysisData/CGM/Ibanez/RocketRoll/V2'
+    tableBase = 'Guitar/Ibanez/RocketRoll/V2'
   ),
   SysCompPickup(
     name = "Evolution",
     manuf = "DiMarzio",
     mDCR = 14.16,
-    tableBase = 'GuitarAnalysisData/CGM/Dimarzio/EVO/EVO'
+    tableBase = 'Guitar/DiMarzio/EVO/evoB/EVO'
   ),
   # Pickup(
   #   name = "P19",
@@ -34,37 +35,37 @@ pickupList = c(
   #   name = "X1",
   #   manuf = "Maverick",
   #   mDCR = 14.16,
-  #   tableBase = 'GuitarAnalysisData/CGM/X1/neat/X1B'
+  #   tableBase = 'Guitar/X1/neat/X1B'
   # ),
   # SysCompPickup(
   #   name = "IBZ-B",
   #   manuf = "Dimarzio",
   #   mDCR = 14.16,
-  #   tableBase = 'GuitarAnalysisData/CGM/DiMarzio/IBZ/IBZ-B'
+  #   tableBase = 'Guitar/DiMarzio/IBZ/IBZ-B'
   # ),
   SysCompPickup(
     name = "Tone Zone",
     manuf = "Dimarzio",
     mDCR = 14.16,
-    tableBase = 'GuitarAnalysisData/CGM/Dimarzio/ToneZone/TZ'
+    tableBase = 'Guitar/Dimarzio/ToneZone/TZ'
    ),
   SysCompPickup(
     name = "498T",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'GuitarAnalysisData/CGM/Gibson/498T/498THBWG'
+    tableBase = 'Guitar/Gibson/498T/498THBWG'
   ),
 # SysCompPickup(
 #   name = "Air Norton",
 #   manuf = "Dimarzio",
 #   mDCR = 14.16,
-#   tableBase = 'GuitarAnalysisData/CGM/Dimarzio/AirNorton/AirNorton'
+#   tableBase = 'Guitar/Dimarzio/AirNorton/AirNorton'
 #   ),
 SysCompPickup(
   name = "Dimebucker",
   manuf = "Seymour Duncan",
   mDCR = 17.17,
-  tableBase = 'GuitarAnalysisData/CGM/SD/Dime/Dime',
+  tableBase = 'Guitar/SD/Dime/Dime',
   LDOffset=0,
   ULOffset=0
 )
@@ -72,7 +73,7 @@ SysCompPickup(
 #   name = "2112",
 #   manuf = "Straylight",
 #   mDCR = 19.8,
-#   tableBase = 'GuitarAnalysisData/CGM/Straylight/Humbucker/P21/1212/21'
+#   tableBase = 'Guitar/Straylight/Humbucker/P21/1212/21'
 #   )
 )
 

@@ -1,13 +1,14 @@
 ###
-# Each pickup needs one of these to define a report. This should be as short as possible and 
+# Each pickup needs one of these to define a report. This should be as short as possible and
 # contain no logic beyond defining a piuckup and printing some data
 #
- 
+
 
 ##
-# Import needed libraries
-source('sysCompPickup.R')
-source('pickupComparisonCharts.R')
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -15,7 +16,6 @@ source('pickupComparisonCharts.R')
 # Load some pickup data. Expected are three .csv files from the SYSCOMP scope
 # with the -LD.csv -UL.csv and -IT.csv suffixes
 
-#I'm using my own pickup as the default for this template.
 
 chartHeading = "Duncan Designed HB103"
 
@@ -24,7 +24,15 @@ pickupList = c(
     name = "HB103",
     manuf = "Seymour Duncan",
     mDCR = 7.19,
-    tableBase = 'PublicData/Guitar/SD/DD Set/HB103B/HB103B',
+    tableBase = 'Guitar/SD/DD Set/HB103B/HB103B',
+    LDOffset=0,
+    ULOffset=0
+  ),
+  SysCompPickup(
+    name = "JB",
+    manuf = "Seymour Duncan",
+    mDCR = 7.19,
+    tableBase = 'Guitar/SD/TB4-JB/JB',
     LDOffset=0,
     ULOffset=0
   ),
@@ -32,7 +40,7 @@ pickupList = c(
   #   name = "HZ Bridge",
   #   manuf = "EMG",
   #   mDCR = 12.36,
-  #   tableBase = 'PublicData/Guitar/EMG/HZ/bridge',
+  #   tableBase = 'Guitar/EMG/HZ/bridge',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -40,7 +48,7 @@ pickupList = c(
   #   name = "HZ Neck",
   #   manuf = "EMG",
   #   mDCR = 12.36,
-  #   tableBase = 'PublicData/Guitar/EMG/HZ/neck',
+  #   tableBase = 'Guitar/EMG/HZ/neck',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -48,25 +56,25 @@ pickupList = c(
   #   name = "Norton",
   #   manuf = "Dimarzio",
   #   mDCR = 14.16,
-  #   tableBase = 'PublicData/Guitar/Dimarzio/AirNorton/AirNorton'
+  #   tableBase = 'Guitar/Dimarzio/AirNorton/AirNorton'
   # ),
   SysCompPickup(
     name = "Tone Zone",
     manuf = "Dimarzio",
     mDCR = 14.16,
-    tableBase = 'PublicData/Guitar/Dimarzio/ToneZone/TZ'
+    tableBase = 'Guitar/Dimarzio/ToneZone/TZ'
   ),
   SysCompPickup(
     name = "EVO",
     manuf = "DiMarzio",
     mDCR = 14.16,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/evoB/EVO'
+    tableBase = 'Guitar/DiMarzio/EVO/evoB/EVO'
   ),
   # SysCompPickup(
   #   name = "Jazz",
   #   manuf = "Seymour Duncan",
   #   mDCR = 7.19,
-  #   tableBase = 'PublicData/Guitar/SD/Jazz/Jazz',
+  #   tableBase = 'Guitar/SD/Jazz/Jazz',
   #   LDOffset=0,
   #   ULOffset=0
   # ),
@@ -74,7 +82,7 @@ pickupList = c(
     name = "498T",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'PublicData/Guitar/Gibson/498T/498THBBR',
+    tableBase = 'Guitar/Gibson/498T/498THBBR',
     LDOffset=0,
     ULOffset=0
   )#,
