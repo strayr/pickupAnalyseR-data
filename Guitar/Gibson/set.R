@@ -1,8 +1,7 @@
-#Test-Driver for pickup
-libfolder <- "pickupAnalyseR"
-source(paste(libfolder, 'sysCompPickup.R', sep = "/"))
-source(paste(libfolder, 'pickupComparisonCharts.R', sep = "/"))
-
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -18,20 +17,20 @@ pickupList = c(
     name = "490R",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'GuitarAnalysisData/CGM/Gibson/490R/490R_HBBR',
+    tableBase = 'Guitar/Gibson/490R/490R_HBBR',
     LDOffset=0,
     ULOffset=0
   ),
- 
+
   SysCompPickup(
     name = "498T",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'GuitarAnalysisData/CGM/Gibson/498T/498THBWG',
+    tableBase = 'Guitar/Gibson/498T/498THBWG',
     LDOffset=0,
     ULOffset=2
   )
-  
+
 )
 
 for (p in pickupList) {
