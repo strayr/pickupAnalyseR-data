@@ -1,13 +1,13 @@
 ###
-# Each pickup needs one of these to define a report. This should be as short as possible and 
+# Each pickup needs one of these to define a report. This should be as short as possible and
 # contain no logic beyond defining a piuckup and printing some data
 #
- 
 
-##
-# Import needed libraries
-source('sysCompPickup.R')
-source('pickupComparisonCharts.R')
+
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -17,14 +17,14 @@ source('pickupComparisonCharts.R')
 
 #I'm using my own pickup as the default for this template.
 
-chartHeading = "SD APH2 Comparison"
+chartHeading = "SD APH2 Similar"
 
 pickupList = c(
   SysCompPickup(
     name = "APH2 Neck",
     manuf = "Seymour Duncan",
     mDCR = 8.20,
-    tableBase = 'PublicData/Guitar/SD/APH2/APH2N',
+    tableBase = 'Guitar/SD/APH2/APH2N',
     LDOffset=0,
     ULOffset=0
   ),
@@ -32,7 +32,7 @@ pickupList = c(
     name = "APH2 Bridge",
     manuf = "Seymour Duncan",
     mDCR = 8.80,
-    tableBase = 'PublicData/Guitar/SD/APH2/APH2B',
+    tableBase = 'Guitar/SD/APH2/APH2B',
     LDOffset=0,
     ULOffset=0
   ),
@@ -56,7 +56,7 @@ pickupList = c(
      name = "Norton",
      manuf = "Dimarzio",
      mDCR = 14.16,
-     tableBase = 'PublicData/Guitar/Dimarzio/AirNorton/AirNorton'
+     tableBase = 'Guitar/Dimarzio/AirNorton/AirNorton'
    ),
   # SysCompPickup(
   #   name = "Tone Zone",
@@ -74,7 +74,7 @@ pickupList = c(
      name = "Jazz",
      manuf = "Seymour Duncan",
      mDCR = 7.19,
-     tableBase = 'PublicData/Guitar/SD/Jazz/Jazz',
+     tableBase = 'Guitar/SD/Jazz/Jazz',
      LDOffset=0,
      ULOffset=0
    ),
@@ -82,7 +82,7 @@ pickupList = c(
     name = "490R",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'PublicData/Guitar/Gibson/490R/490R_HBBR',
+    tableBase = 'Guitar/Gibson/490R/490R_HBBR',
     LDOffset=0,
     ULOffset=0
   ),
@@ -102,8 +102,8 @@ pickupList = c(
      name = "Super70",
      manuf = "Ibanez",
      mDCR = 15.49,
-     tableBase = 'PublicData/Guitar/Ibanez/RocketRoll/S70'
-   
+     tableBase = 'Guitar/Ibanez/RocketRoll/S70'
+
   )#,
   # SysCompPickup(
   #   name = "Super 2",

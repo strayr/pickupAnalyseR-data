@@ -64,5 +64,5 @@ print(loadedRelPlot(
   chartHeading = chartHeading,
   min = -4,
   smoothing = 0.08,
-  max = 4
+  max = 2
 ))
