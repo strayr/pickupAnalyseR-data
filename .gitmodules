@@ -1,0 +1,3 @@
+[submodule "pickupAnalyseR-stable"]
+	path = pickupAnalyseR-stable
+	url = https://github.com/strayr/pickupAnalyseR.git
