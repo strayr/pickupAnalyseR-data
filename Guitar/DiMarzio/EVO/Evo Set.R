@@ -1,13 +1,14 @@
 ###
-# Each pickup needs one of these to define a report. This should be as short as possible and 
+# Each pickup needs one of these to define a report. This should be as short as possible and
 # contain no logic beyond defining a piuckup and printing some data
 #
- 
+
 
 ##
-# Import needed libraries
-source('sysCompPickup.R')
-source('pickupComparisonCharts.R')
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -24,7 +25,7 @@ pickupList = c(
     name = "Evolution Neck",
     manuf = "Straylight",
     mDCR = 12.36,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/evoN/evoN',
+    tableBase = 'Guitar/DiMarzio/EVO/evoN/evoN',
     LDOffset=0,
     ULOffset=0
   ),
@@ -32,16 +33,16 @@ pickupList = c(
     name = "Evo Bridge Old",
     manuf = "Straylight",
     mDCR = 12.36,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/evoB/EVO',
+    tableBase = 'Guitar/DiMarzio/EVO/evoB/EVO',
     LDOffset=0,
     ULOffset=0
   ),
-  
+
   SysCompPickup(
     name = "Parallel",
     manuf = "Straylight",
     mDCR = 6.18,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/evoN/evoN-parallel',
+    tableBase = 'Guitar/DiMarzio/EVO/evoN/evoN-parallel',
     LDOffset=0,
     ULOffset=0
   ),
@@ -49,7 +50,7 @@ pickupList = c(
     name = "Both HB",
     manuf = "Straylight",
     mDCR = 6.18,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/pair/HB',
+    tableBase = 'Guitar/DiMarzio/EVO/pair/HB',
     LDOffset=0,
     ULOffset=0
   ),
@@ -57,7 +58,7 @@ pickupList = c(
     name = "Inside Coils",
     manuf = "Straylight",
     mDCR = 6.18,
-    tableBase = 'PublicData/Guitar/DiMarzio/EVO/pair/RB-erf',
+    tableBase = 'Guitar/DiMarzio/EVO/pair/RB-erf',
     LDOffset=0,
     ULOffset=0
   )#,

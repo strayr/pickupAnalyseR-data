@@ -1,15 +1,16 @@
 ###
-# Each pickup needs one of these to define a report. This should be as short as possible and 
+# Each pickup needs one of these to define a report. This should be as short as possible and
 # contain no logic beyond defining a piuckup and printing some data
 #
- 
+
 
 ##
 # Import needed libraries
 
-#libfolder<-"pickupAnalyseR"
-source('sysCompPickup.R')
-source('pickupComparisonCharts.R')
+#Explicitly call our library folder
+libfolder <- "pickupAnalyseR-stable"
+source(paste(libfolder,"sysCompPickup.R", sep = "/"))
+source(paste(libfolder,"pickupComparisonCharts.R", sep = "/"))
 
 
 
@@ -26,7 +27,7 @@ pickupList = c(
     name = "498T",
     manuf = "Gibson",
     mDCR = 14.28,
-    tableBase = 'PublicData/Guitar/Gibson/498T/498THBWG',
+    tableBase = 'Guitar/Gibson/498T/498THBWG',
     LDOffset=0,
     ULOffset=2
   ),
@@ -46,14 +47,14 @@ pickupList = c(
     name = "498T Black Green",
     manuf = "Gibson",
     mDCR = 7.17,
-    tableBase = 'PublicData/Guitar/Gibson/498T/498TGB',
+    tableBase = 'Guitar/Gibson/498T/498TGB',
     ULOffset=2
   ),
   RW = SysCompPickup(
     name = "498T Red White",
     manuf = "Gibson",
     mDCR = 7.17,
-    tableBase = 'PublicData/Guitar/Gibson/498T/498TWR',
+    tableBase = 'Guitar/Gibson/498T/498TWR',
     ULOffset=1
   )
 )
